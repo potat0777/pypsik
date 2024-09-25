@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game with Ball</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <h1>Game with Ball</h1>
+
+    <!-- Главное меню -->
+    <div id="main-menu" class="active">
+        <button id="start-btn">Start</button>
+    </div>
+
+    <!-- Игровой экран -->
+    <div id="game-container">
+        <div id="info-container">
+            <div id="score-container">Score: 0</div>
+            <div id="lives-container">Lives: 3</div>
+        </div>
+
+        <canvas id="myCanvas" width="700" height="400"></canvas>
+
+        <!-- Контейнер с кнопками под игрой -->
+        <div id="buttons-container">
+            <button id="restart-btn">Restart</button>
+            <button id="return-menu-btn">Return to Menu</button>
+        </div>
+
+        <!-- Сообщения игры (выигрыш, проигрыш, пауза) -->
+        <div id="game-message"></div>
+    </div>
+</body>
+</html>
